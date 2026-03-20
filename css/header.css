@@ -37,5 +37,28 @@ nav {
 .list-links li a {
   text-decoration: none;
   color: var(--text-secundary-color);
-  cursor: pointer;
+  font-weight: var(--menu-text-weight);
+  font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .navgation-menu {
+    margin-top: 0;
+    width: 467px;
+  }
+  .navgation-menu label {
+    display: none;
+  }
+  .navgation-menu nav {
+    display: block;
+  }
+  .navgation-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  .navgation-menu ul li{
+    margin: 0px;
+  }
 }
