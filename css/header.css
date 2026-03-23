@@ -1,5 +1,3 @@
-@import url(global.css);
-
 header {
   background-color: var(--background-tertiary-color);
   display: flex;
@@ -13,6 +11,12 @@ header {
   display: inline-block;
   width: 68px;
   height: 64px;
+}
+.img-mobile {
+  display: block;
+}
+.img-desktop {
+  display: none;
 }
 .navgation-menu {
   margin-top: 24px;
@@ -58,7 +62,30 @@ nav {
     align-items: center;
     padding: 0;
   }
-  .navgation-menu ul li{
+  .navgation-menu ul li {
     margin: 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 38px 120px;
+  }
+  .logo {
+    width: 260px;
+    height: 64px;
+  }
+  .img-desktop {
+    display: block;
+  }
+  .img-mobile {
+    display: none;
+  }
+  .navgation-menu a:hover{
+    color: var(--primary-color);
+  }
+}
+@media screen and (min-width: 1920px) {
+  header {
+    padding: 38px 160px;
   }
 }
