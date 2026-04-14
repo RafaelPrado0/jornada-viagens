@@ -19,6 +19,13 @@
   --text-weight: 400;
   --menu-text-weight: 500;
 }
+section {
+  width: 360px;
+  margin: 0 auto 88px;
+}
+section.hero {
+  width: 100%;
+}
 
 body,
 img,
@@ -45,6 +52,10 @@ body {
   margin: 0;
   text-align: center;
 }
+.section-title {
+  width: 226px;
+  margin: 0 auto 32px;
+}
 .section-title hr {
   width: 180px;
   height: 4px;
@@ -53,7 +64,7 @@ body {
   margin: 16px auto 32px;
 }
 .button {
-  width: 280px;
+  min-width: 280px;
   height: 64px;
   color: var(--text-secundary-color);
   font-weight: var(--title-weight);
@@ -63,14 +74,44 @@ body {
   display: inline-block;
   text-decoration: none;
   line-height: 64px;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
+  .section-title {
+    width: 100%;
+  }
   .section-title h2 {
     font-size: 32px;
+  }
+  section {
+    width: 768px;
+    margin: 0 auto 88px;
+  }
+  section.hero {
+    width: 100%;
   }
 }
 @media screen and (min-width: 1024px) {
   .button:hover {
     background-color: var(--primary-color);
+  }
+  section {
+    width: 1024px;
+    margin: 0 auto 88px;
+  }
+  section.hero {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1144px) {
+  .button:hover {
+    background-color: var(--primary-color);
+  }
+  section {
+    width: 1440px;
+    margin: 0 auto 88px;
+  }
+  section.hero {
+    width: 100%;
   }
 }
