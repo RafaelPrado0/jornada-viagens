@@ -20,11 +20,9 @@
     background-size: cover;
   }
   .hero h2 {
-    padding: 88px 60px;
     font-size: 32px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .hero-img {
     background: url(../img/hero-desktop.jpg);
