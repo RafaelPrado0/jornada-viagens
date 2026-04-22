@@ -37,9 +37,6 @@
   .hero-img {
     background: url(../img/hero-desktop.jpg);
     background-size: cover;
-    height: 1100px;
-  }
-  .hero h2 {
-    padding: 104px 160px;
+    height: 1500px;
   }
 }
