@@ -1,3 +1,6 @@
+/* .main-header {
+  width: 320px;
+} */
 .main-header {
   background-color: var(--background-tertiary-color);
   display: flex;
@@ -44,6 +47,9 @@ nav {
   font-weight: var(--menu-text-weight);
   font-size: 24px;
 }
+.header {
+  width: 100%;
+}
 
 @media screen and (min-width: 768px) {
   .navgation-menu {
@@ -67,9 +73,6 @@ nav {
   }
 }
 @media screen and (min-width: 1024px) {
-  header {
-    padding: 38px 120px;
-  }
   .logo {
     width: 260px;
     height: 64px;
@@ -80,7 +83,7 @@ nav {
   .img-mobile {
     display: none;
   }
-  .navgation-menu a:hover{
+  .navgation-menu a:hover {
     color: var(--primary-color);
   }
 }

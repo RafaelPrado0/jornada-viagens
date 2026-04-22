@@ -7,15 +7,14 @@
 }
 .destinations h4 {
   font-size: 28px;
-  margin: 0;
+  margin: 24px 0;
+  line-height: 100%;
   font-weight: var(--title-weight);
 }
 .destinations p {
   font-weight: var(--text-primary);
-  font-size: 26px;
-  text-align: left;
-  margin: 0px 20px;
-  color: var(--text-primary-color);
+  font-size: 20px;
+  line-height: 32px;
 }
 .destinations .button {
   width: 100%;
@@ -40,10 +39,6 @@
   .destinations .item {
     align-items: baseline;
     width: 648px;
-  }
-  .destinations p {
-    margin: 0;
-    font-size: 28px;
   }
   .img-item-tokyo {
     height: 452px;
