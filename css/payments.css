@@ -28,13 +28,14 @@
 
 @media screen and (min-width: 768px) {
   .title-text {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    padding: 0 60px;
+    width: 646px;
+    margin: 0 auto;
   }
   .payments .image-gallery {
-    padding: 0 60px;
-    width: 860px;
+    margin: 24px auto;
+    width: 648px;
     height: 570px;
   }
   .payments .content-container .image-gallery .image.first {
@@ -51,6 +52,12 @@
   }
 }
 @media screen and (min-width: 1024px) {
+  .title-text {
+    width: 856px;
+  }
+  .payments .image-gallery {
+    width: 860px;
+  }
   .payments .content-container .image-gallery .image.first {
     background: url(../img/gallery-desktop1.png);
     background-size: cover;
