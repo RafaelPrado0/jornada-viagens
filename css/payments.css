@@ -1,0 +1,86 @@
+.content-title {
+  margin: 0;
+}
+.payments .image-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  height: 460px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.payments .image-gallery .image.first {
+  background: url(../img/gallery-mobile1.png) no-repeat;
+  background-size: cover;
+}
+.payments .image-gallery .image.second {
+  background: url(../img/gallery-mobile2.png) no-repeat;
+  background-size: cover;
+}
+.payments .image-gallery .image.thirdy {
+  background: url(../img/gallery-mobile3.png) no-repeat;
+  background-size: cover;
+}
+.payments .image-gallery .image.colspan-2 {
+  grid-column: span 2;
+}
+
+@media screen and (min-width: 768px) {
+  .title-text {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0 60px;
+  }
+  .payments .image-gallery {
+    padding: 0 60px;
+    width: 860px;
+    height: 570px;
+  }
+  .payments .content-container .image-gallery .image.first {
+    background: url(../img/gallery-tablet1.png);
+    background-size: cover;
+  }
+  .payments .content-container .image-gallery .image.second {
+    background: url(../img/gallery-tablet2.png);
+    background-size: cover;
+  }
+  .payments .content-container .image-gallery .image.thirdy {
+    background: url(../img/gallery-tablet3.png) no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .payments .content-container .image-gallery .image.first {
+    background: url(../img/gallery-desktop1.png);
+    background-size: cover;
+  }
+  .payments .content-container .image-gallery .image.second {
+    background: url(../img/gallery-desktop2.png);
+    background-size: cover;
+  }
+  .payments .content-container .image-gallery .image.thirdy {
+    background: url(../img/gallery-desktop3.png) no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .payments .content-container {
+    gap: 24px;
+    display: flex;
+    justify-content: center;
+  }
+  .title-text {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .payments .content-container .title-text {
+    width: 384px;
+    padding: 0;
+  }
+  .payments .content-container .image-gallery {
+    margin-top: 0;
+    width: 790px;
+    padding: 0;
+  }
+}
